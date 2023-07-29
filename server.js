@@ -37,7 +37,7 @@ app.post("/adminemail", async (req, res) => {
     secure: true,
     auth: {
       user: process.env.Email_Test,
-      pass: process.env.Security_Key,
+      pass: process.env.Email_Security_Key,
     },
   };
 
@@ -85,7 +85,7 @@ app.post("/useremail", async (req, res) => {
     secure: true,
     auth: {
       user: process.env.Email_Test,
-      pass: process.env.Security_Key,
+      pass: process.env.Email_Security_Key,
     },
   };
 
