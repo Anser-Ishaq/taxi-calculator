@@ -36,16 +36,16 @@ app.post("/adminemail", async (req, res) => {
     port: 587,
     secure: true,
     auth: {
-      user: process.env.Email_Test,
-      pass: process.env.Email_Security_Key,
+      user: "testing006900@gmail.com",
+      pass: "tnwqgwdctfiwlgeg",
     },
   };
 
   const transporter = nodemailer.createTransport(config);
   try {
     const info = await transporter.sendMail({
-      from: process.env.Email_Test,
-      to: process.env.Admin_Email,
+      from: "testing006900@gmail.com",
+      to: "aalamsheruos@gmail.com",
       subject: "User Confirmation",
       text: "New User here",
       html: `<b>
@@ -84,14 +84,14 @@ app.post("/useremail", async (req, res) => {
     port: 587,
     secure: true,
     auth: {
-      user: process.env.Email_Test,
-      pass: process.env.Email_Security_Key,
+      user: "testing006900@gmail.com",
+      pass: "tnwqgwdctfiwlgeg",
     },
   };
 
   const transporter = nodemailer.createTransport(config);
   const info = await transporter.sendMail({
-    from: process.env.Email_Test,
+    from: "testing006900@gmail.com",
     to: email,
     subject: "Hello ✔",
     text: "Hello world? for testing",
