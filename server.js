@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 9001;
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 var bodyParser = require("body-parser");
@@ -102,6 +102,6 @@ app.post("/useremail", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-    console.log(`listening to port ${PORT}`)
+app.listen(port, () => {
+    console.log(`listening to port ${port}`)
 });
