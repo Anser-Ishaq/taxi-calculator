@@ -31,6 +31,7 @@ app.post("/adminemail", async (req, res) => {
     selectedDestination,
   } = req.body;
   let config = {
+    host: "smtp.gmail.com",
     service: "gmail",
     port: 587,
     secure: true,
@@ -78,6 +79,7 @@ app.post("/adminemail", async (req, res) => {
 app.post("/useremail", async (req, res) => {
   const { email, name, totalPrice } = req.body;
   let config = {
+    host: "smtp.gmail.com",
     service: "gmail",
     port: 587,
     secure: true,
